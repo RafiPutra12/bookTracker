@@ -34,7 +34,7 @@
             </div>
         @endif
 
-        <h2 class="m-6 text-xl font-semibold text-gray-900 text-center">Laravel Library App</h2>
+        <h2 class="m-6 text-xl font-semibold text-gray-900 text-center">Booktracker List Books</h2>
         <div class="input-group rounded text-center m-5">
             <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                 aria-describedby="search-addon" />

@@ -7,10 +7,22 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
+
+    public function loans(): HasMany {
+        return $this->hasMany(Loan::class);
+    }
+
+    public function activeLoans() {
+        return $this
+            ->loans()
+            ->where('is_returned', false)
+            ->get();
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -21,6 +33,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role'
     ];
 
     /**

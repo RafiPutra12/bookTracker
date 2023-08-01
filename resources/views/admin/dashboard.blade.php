@@ -2,7 +2,7 @@
     @include('sweetalert::alert')
     @stack('scripts')
     <x-slot name="header">
-        <div class="justify-between">
+        <div class="justify-between ml-6">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 {{ $pageTitle }}
             </h2>

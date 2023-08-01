@@ -22,23 +22,13 @@
             <div class="p-6 text-right">
                 @auth
                     @include('layouts.navigation')
-                    @include('sweetalert::alert')
-                @else
-                    <a href="{{ route('login') }}"
-                    class="font-semibold text-gray-600 hover:text-gray-900">Log
-                        in</a>
-
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}"
-                        class="ml-4 font-semibold text-gray-600 hover:text-gray-900">Register</a>
-                    @endif
                 @endauth
             </div>
         @endif
 
         <h2 class="m-6 text-xl font-semibold text-gray-900 text-center">BookTracker</h2>
 
-        <table class="mx-auto" id="bookTable">
+        <table class="mx-auto datatable" id="bookTable">
             <thead>
             <tr>
                 <th
@@ -147,6 +137,8 @@
             </tbody>
         </table>
     </div>
+</body>
+</html>
 @push('scripts')
     <script type="module">
         $(document).ready(function() {
@@ -154,5 +146,3 @@
         });
     </script>
 @endpush
-</body>
-</html>

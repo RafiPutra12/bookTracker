@@ -17,7 +17,6 @@
     <body class="font-sans antialiased">
         @include('layouts.navigation')
         @include('sweetalert::alert')
-        @vite('resources/js/app.js')
         @stack('scripts')
 
             <!-- Page Heading -->

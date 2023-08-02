@@ -40,12 +40,19 @@ class RegisteredUserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+<<<<<<< HEAD
+=======
             'role' => $request->role
+>>>>>>> Tugas-Dewa/main
         ]);
 
         event(new Registered($user));
 
+<<<<<<< HEAD
+        Auth::login($user);
+=======
         // Auth::login($user);
+>>>>>>> Tugas-Dewa/main
 
         return redirect(RouteServiceProvider::HOME);
     }

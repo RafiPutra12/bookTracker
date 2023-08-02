@@ -4,6 +4,11 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\LoanController;
+<<<<<<< HEAD
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HomeController;
+=======
+>>>>>>> Tugas-Dewa/main
 
 /*
 |--------------------------------------------------------------------------
@@ -16,15 +21,22 @@ use App\Http\Controllers\LoanController;
 |
 */
 
+<<<<<<< HEAD
+Route::get('/', [HomeController::class, 'index']);
+=======
 // Route::get('/', [BookController::class, 'index']);
 Route::get('/', function(){
     return view('auth.login');
 });
+>>>>>>> Tugas-Dewa/main
 
 Route::get('/dashboard', [BookController::class, 'index'])
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
+<<<<<<< HEAD
+Route::middleware('auth', 'role:user')->group(function () {
+=======
 // Route::middleware('auth')->group(function () {
 //     Route::get('/books', [BookController::class, 'index'])->name('books.index');
 //     Route::get('/loans', [LoanController::class, 'index'])->name('loans.index');
@@ -38,6 +50,7 @@ Route::get('/dashboard', [BookController::class, 'index'])
 
 // Rute untuk Pengguna Biasa
 Route::middleware(['auth', 'role:user'])->group(function () {
+>>>>>>> Tugas-Dewa/main
     Route::get('/books', [BookController::class, 'index'])->name('books.index');
     Route::get('/loans', [LoanController::class, 'index'])->name('loans.index');
     Route::get('/loans/{book}', [LoanController::class, 'create'])->name('loans.create');
@@ -48,6 +61,18 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+<<<<<<< HEAD
+require __DIR__.'/auth.php';
+
+Route::middleware(['auth', 'role:admin'])->group(function () {
+    Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    Route::resource('admin', AdminController::class);
+    Route::get('exportExcel', [AdminController::class, 'exportExcel'])->name('admin.exportExcel');
+    Route::get('exportPdf', [AdminController::class, 'exportPdf'])->name('admin.exportPdf');
+});
+
+
+=======
 // Rute untuk Pustakawan
 Route::middleware(['auth', 'role:pustakawan'])->group(function () {
     // Route::get('/special-books', [BookController::class, 'specialBooks'])->name('books.special');
@@ -57,3 +82,4 @@ Route::middleware(['auth', 'role:pustakawan'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
+>>>>>>> Tugas-Dewa/main

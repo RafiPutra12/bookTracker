@@ -25,6 +25,13 @@ class Book extends Model
         return $this->hasMany(Loan::class);
     }
 
+<<<<<<< HEAD
+    public function admin(): HasMany {
+        return $this->hasMany(Admin::class);
+    }
+
+=======
+>>>>>>> Tugas-Dewa/main
     public function availableCopies(): int {
         return $this->copies_in_circulation - $this->activeLoans();
     }

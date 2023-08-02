@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
+<<<<<<< HEAD
+use RealRashid\SweetAlert\Facades\Alert;
+=======
+>>>>>>> Tugas-Dewa/main
 
 class ProfileController extends Controller
 {
@@ -34,7 +38,13 @@ class ProfileController extends Controller
 
         $request->user()->save();
 
+<<<<<<< HEAD
+        Alert::success('Update Successfully', 'profile Updated Successfully.');
+
+        return redirect()->route('profile.edit');
+=======
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
+>>>>>>> Tugas-Dewa/main
     }
 
     /**

@@ -2,7 +2,11 @@
 
 <x-app-layout>
     <x-slot name="header">
+<<<<<<< HEAD
         <h2 class="font-semibold text-xl text-gray-800 leading-tight ml-6">Active Loans </h2>
+=======
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">Active Loans </h2>
+>>>>>>> Tugas-Dewa/main
     </x-slot>
 
     <div class="py-12">

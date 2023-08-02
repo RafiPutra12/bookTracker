@@ -16,7 +16,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'name' => env('APP_NAME', 'BookTracker'),
+=======
+    'name' => env('APP_NAME', 'Laravel'),
+>>>>>>> Tugas-Dewa/main
 
     /*
     |--------------------------------------------------------------------------

@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "114f28f56204f2416a432266a68950ec",
     "packages": [
         {
@@ -84,6 +85,11 @@
             "time": "2023-01-12T15:12:49+00:00"
         },
         {
+=======
+    "content-hash": "808fe5e9ba0cc5095b44ed39c397ae61",
+    "packages": [
+        {
+>>>>>>> Tugas-Dewa/main
             "name": "brick/math",
             "version": "0.11.0",
             "source": {
@@ -139,6 +145,7 @@
             "time": "2023-01-15T23:15:59+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "composer/semver",
             "version": "3.3.2",
             "source": {
@@ -220,6 +227,8 @@
             "time": "2022-04-01T19:23:25+00:00"
         },
         {
+=======
+>>>>>>> Tugas-Dewa/main
             "name": "dflydev/dot-access-data",
             "version": "v3.0.2",
             "source": {
@@ -463,6 +472,7 @@
             "time": "2022-12-15T16:57:16+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "dompdf/dompdf",
             "version": "v2.0.3",
             "source": {
@@ -525,6 +535,8 @@
             "time": "2023-02-07T12:51:48+00:00"
         },
         {
+=======
+>>>>>>> Tugas-Dewa/main
             "name": "dragonmantank/cron-expression",
             "version": "v3.3.2",
             "source": {
@@ -653,6 +665,7 @@
             "time": "2023-01-14T14:17:03+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "ezyang/htmlpurifier",
             "version": "v4.16.0",
             "source": {
@@ -714,6 +727,8 @@
             "time": "2022-09-18T07:06:19+00:00"
         },
         {
+=======
+>>>>>>> Tugas-Dewa/main
             "name": "fruitcake/php-cors",
             "version": "v1.2.0",
             "source": {
@@ -2104,6 +2119,7 @@
             "time": "2022-04-17T13:12:02+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "maatwebsite/excel",
             "version": "3.1.48",
             "source": {
@@ -2439,6 +2455,8 @@
             "time": "2023-04-26T07:27:39+00:00"
         },
         {
+=======
+>>>>>>> Tugas-Dewa/main
             "name": "monolog/monolog",
             "version": "3.4.0",
             "source": {
@@ -2933,6 +2951,7 @@
             "time": "2023-02-08T01:06:31+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "phenx/php-font-lib",
             "version": "0.5.4",
             "source": {
@@ -3128,6 +3147,8 @@
             "time": "2023-06-14T22:48:31+00:00"
         },
         {
+=======
+>>>>>>> Tugas-Dewa/main
             "name": "phpoption/phpoption",
             "version": "1.9.1",
             "source": {
@@ -3868,6 +3889,7 @@
             "time": "2023-04-15T23:01:58+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "realrashid/sweet-alert",
             "version": "v7.0.0",
             "source": {
@@ -4011,6 +4033,8 @@
             "time": "2021-12-11T13:40:54+00:00"
         },
         {
+=======
+>>>>>>> Tugas-Dewa/main
             "name": "symfony/console",
             "version": "v6.3.0",
             "source": {
@@ -6521,6 +6545,7 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "yajra/laravel-datatables-oracle",
@@ -6605,6 +6630,8 @@
                 }
             ],
             "time": "2023-07-31T02:53:55+00:00"
+=======
+>>>>>>> Tugas-Dewa/main
         }
     ],
     "packages-dev": [
@@ -7657,6 +7684,7 @@
         },
         {
             "name": "phpunit/phpunit",
+<<<<<<< HEAD
             "version": "10.2.5",
             "source": {
                 "type": "git",
@@ -7667,6 +7695,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/15a89f123d8ca9c1e1598d6d87a56a8bf28c72cd",
                 "reference": "15a89f123d8ca9c1e1598d6d87a56a8bf28c72cd",
+=======
+            "version": "10.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "1c17815c129f133f3019cc18e8d0c8622e6d9bcd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1c17815c129f133f3019cc18e8d0c8622e6d9bcd",
+                "reference": "1c17815c129f133f3019cc18e8d0c8622e6d9bcd",
+>>>>>>> Tugas-Dewa/main
                 "shasum": ""
             },
             "require": {
@@ -7738,7 +7778,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/10.2.5"
+=======
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.2.6"
+>>>>>>> Tugas-Dewa/main
             },
             "funding": [
                 {
@@ -7754,7 +7798,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-07-14T04:18:47+00:00"
+=======
+            "time": "2023-07-17T12:08:28+00:00"
+>>>>>>> Tugas-Dewa/main
         },
         {
             "name": "sebastian/cli-parser",

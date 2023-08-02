@@ -33,6 +33,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+<<<<<<< HEAD
+=======
+        'role'
+>>>>>>> Tugas-Dewa/main
     ];
 
     /**

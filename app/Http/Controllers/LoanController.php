@@ -6,7 +6,10 @@ use App\Models\Book;
 use App\Models\Loan;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use RealRashid\SweetAlert\Facades\Alert;
+=======
+>>>>>>> Tugas-Dewa/main
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator as ValidatorFacade;
 use Illuminate\Validation\Validator;
@@ -51,9 +54,14 @@ class LoanController extends Controller
 
         Loan::create($loanDetails);
 
+<<<<<<< HEAD
         Alert::success('Added Successfully', 'Successfully borrow a book!');
 
         return redirect()->route('loans.index');
+=======
+        return to_route('loans.index')
+            ->with('status', 'Book borrowed successfully');
+>>>>>>> Tugas-Dewa/main
     }
 
     public function create(Book $book): View {
@@ -63,8 +71,13 @@ class LoanController extends Controller
     public function terminate(Loan $loan): RedirectResponse {
         $loan->terminate();
 
+<<<<<<< HEAD
         Alert::success('Removed Successfully', 'Book Returned Successfully.');
 
         return redirect()->route('loans.index');
+=======
+        return to_route('loans.index')
+            ->with('status', 'Book returned successfully');
+>>>>>>> Tugas-Dewa/main
     }
 }

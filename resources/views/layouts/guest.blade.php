@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+<<<<<<< HEAD
         <title>{{ config('app.name', 'BookTracker') }}</title>
+=======
+        <title>{{ config('app.name', 'Laravel') }}</title>
+>>>>>>> Tugas-Dewa/main
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -18,7 +22,11 @@
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <div>
                 <a href="/">
+<<<<<<< HEAD
                     <img src="{{ Vite::asset('resources\images\logo.png') }}" style="width: 300px; height: 300px;" />
+=======
+                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+>>>>>>> Tugas-Dewa/main
                 </a>
             </div>
 
